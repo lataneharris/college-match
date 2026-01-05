@@ -41,3 +41,20 @@ Deploy to Vercel:
 - Add true admissions/application/financial aid/instagram links via a curated mapping (schools vary a lot).
 - Replace AI-derived alumni/fun facts with a structured data source or a vetted dataset.
 - Add caching (Redis) for enrichment/image lookups at scale.
+
+## 4) Publish (get a real URL)
+
+### Option A: Vercel (recommended)
+1. Create a GitHub repo and push this project.
+2. In Vercel, click **Add New → Project**, import the repo.
+3. Add Environment Variables in Vercel:
+   - `COLLEGESCORECARD_API_KEY`
+   - `OPENAI_API_KEY`
+4. Deploy. Vercel will give you a live URL like `https://your-project.vercel.app`.
+
+Vercel Next.js guide: https://vercel.com/docs/frameworks/full-stack/nextjs citeturn0search11  
+Vercel environment variables: https://vercel.com/docs/environment-variables citeturn0search22  
+Next.js env var behavior: https://nextjs.org/docs/app/guides/environment-variables citeturn0search15
+
+### Option B: Custom domain
+In Vercel → Project → Settings → Domains → add your domain and follow DNS instructions.
