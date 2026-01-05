@@ -1,5 +1,5 @@
-import FindCollegesPage from "@/components/pages/FindCollegesPage";
+import CompareSchoolsPage from "@/components/pages/CompareSchoolsPage";
 
 export default function Page() {
-  return <FindCollegesPage />;
+  return <CompareSchoolsPage />;
 }
